@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Refer to Underwriter Transactions</title>
+      <link rel="stylesheet" href="https://use.typekit.net/vtl2xbn.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>
+        body {
+          background-color: #f4f6f8;
+          font-family: proxima-soft, sans-serif;
+        }
+
+        #underwriter_comment.chat_bubble_row {
+          justify-content: flex-end;
+        }
+
+        #underwriter_comment .chat_bubble {
+          background-color: #F2F2F2;
+        }
+
+        #underwriter_comment .bubble_file_chip {
+          background-color: #E8E8E8;
+          border: 1px solid #D7D7D7;
+        }
+
+        .bubble_file_chip:hover {
+          background-color: #b0bee3;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+
+        #underwriter_comment .bubble_file_chip:hover {
+          background-color: #D7D7D7;
+        }
+
+        .chat_transactions {
+          padding: 15px 14px;
+        }
+
+        .chat_heading {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        .chat_window {
+          aspect-ratio: auto;
+          background-color: #fdfdfd;
+          border: 1px solid #d9d9d9;
+          border-radius: 3px;
+          min-height: 0;
+          max-height: 550px;
+          padding: 8px;
+          overflow: auto;
+        }
+
+        .chat_bubble {
+          background-color: #e7ebf6;
+          border-radius: 3px;
+          flex-flow: column;
+          width: 92%;
+          margin-bottom: 8px;
+          padding: 12px 14px;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+        }
+
+        .bubble_heading {
+          padding-bottom: 6px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .bubble_status {
+          font-weight: 600;
+        }
+
+        .bubble_files {
+          padding-top: 8px;
+          display: flex;
+        }
+
+        .bubble_timestamp {
+          text-align: right;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: 13px;
+          font-weight: 500;
+          display: flex;
+        }
+
+        .bubble_file_chip {
+          color: #333;
+          background-color: #d3dbf0;
+          border: 1px solid #b0bee3;
+          border-radius: 3px;
+          align-items: center;
+          padding: 3px 9px 3px 6px;
+          text-decoration: none;
+          display: inline-flex;
+        }
+
+        .text-block {
+          margin-left: 4px;
+        }
+
+        .chat_bubble_row {
+          justify-content: flex-start;
+          display: flex;
+        }
+
+        .author {
+          padding-left: 4px;
+          font-weight: 400;
+        }
+
+         .chat_window {
+          --sb-track-color: #efefef;
+          --sb-thumb-color: #b9b9b9;
+          --sb-size: 4px;
+        }
+
+        .chat_window::-webkit-scrollbar {
+          width: var(--sb-size)
+        }
+
+        .chat_window::-webkit-scrollbar-track {
+          background: var(--sb-track-color);
+          border-radius: 3px;
+        }
+
+        .chat_window::-webkit-scrollbar-thumb {
+          background: var(--sb-thumb-color);
+          border-radius: 6px;
+        }
+
+        @supports not selector(::-webkit-scrollbar) {
+          .chat_window {
+            scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+          }
+        }
+      </style>
+   </head>
+   <body>
+      <div class="chat_transactions">
+         <div class="chat_heading">
+            <div>Refer to Underwriter Transactions</div>
+         </div>
+         <div class="chat_window">
+            <div id="broker_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files"></div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+            <div id="underwriter_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files">
+                     <a href="#" class="bubble_file_chip w-inline-block">
+                        <div class="w-embed"><i class="fa-regular fa-file"></i></div>
+                        <div class="text-block">file_name.pdf</div>
+                     </a>
+                  </div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+            <div id="broker_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files"></div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+            <div id="underwriter_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files">
+                     <a href="#" class="bubble_file_chip w-inline-block">
+                        <div class="w-embed"><i class="fa-regular fa-file"></i></div>
+                        <div class="text-block">file_name.pdf</div>
+                     </a>
+                  </div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+            <div id="broker_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files">
+                     <a href="#" class="bubble_file_chip w-inline-block">
+                        <div class="w-embed"><i class="fa-regular fa-file"></i></div>
+                        <div class="text-block">file_name.pdf</div>
+                     </a>
+                  </div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+            <div id="underwriter_comment" class="chat_bubble_row">
+               <div class="chat_bubble">
+                  <div class="bubble_heading">Referral Required - New Business Quote</div>
+                  <div class="bubble_status">Quote status: Referral Required &nbsp;| &nbsp;Premium £157.42</div>
+                  <div class="bubble_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, aliquam id viverra non, posuere in nulla. Donec neque dolor, sollicitudin vitae sapien nec, faucibus feugiat orci.</div>
+                  <div class="bubble_files">
+                     <a href="#" class="bubble_file_chip w-inline-block">
+                        <div class="w-embed"><i class="fa-regular fa-file"></i></div>
+                        <div class="text-block">file_name.pdf</div>
+                     </a>
+                  </div>
+                  <div class="bubble_timestamp">
+                     <div class="timestamp">16/03/2026 16:06:54</div>
+                     <div class="author">by user@insurancecompany.com</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
